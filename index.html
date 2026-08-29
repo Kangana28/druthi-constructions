@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Druthi Constructions & Consultancy - Complete Building Solutions Under One Roof.">
+<title>Druthi Constructions & Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#092653;--blue:#123d78;--gold:#d6a52f;--gold2:#f0c85a;--ink:#142033;--muted:#657083;--light:#f5f7fa;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:13px}.topbar .container{display:flex;justify-content:flex-end;gap:25px;padding:8px 0}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 4px 20px rgba(9,38,83,.08)}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:10px;min-width:280px}.logo{height:62px;width:48px;object-fit:contain}.brand-text{display:flex;flex-direction:column;line-height:1.05}.brand-text strong{font-family:"Playfair Display",Georgia,serif;font-size:25px;letter-spacing:1px;color:var(--navy)}.brand-text b{font-size:11px;color:#b27a13;letter-spacing:.3px}.brand-text small{font-size:8px;color:#667085;margin-top:5px}.header-person{border-left:1px solid #e2e6ec;padding-left:18px;margin-left:auto;margin-right:22px;display:flex;flex-direction:column;line-height:1.2}.header-person span{font-size:10px;color:#667085}.header-person strong{font-size:14px;color:var(--navy)}.links{display:flex;gap:20px;align-items:center;font-weight:600;font-size:13px;color:#344054}.links a:hover{color:var(--blue)}
+.menu{display:none;background:none;border:0;font-size:28px;color:var(--navy)}
+.hero{background:linear-gradient(120deg,rgba(5,24,55,.94),rgba(10,50,96,.80)),url('assets/logo.png');background-size:cover;background-position:center;min-height:610px;display:flex;align-items:center;color:#fff}
+.hero-content{max-width:690px;padding:85px 0}.eyebrow{color:var(--gold2);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(42px,6vw,72px);line-height:1.06;margin:15px 0 22px}
+.hero p{font-size:18px;color:#e6ebf3;max-width:620px}
+.btns{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 22px;border-radius:7px;font-weight:700;display:inline-block}.primary{background:var(--gold);color:#10254a}.secondary{border:1px solid rgba(255,255,255,.5);color:#fff}.secondary:hover{background:#fff;color:var(--navy)}
+section{padding:82px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 45px}.section-head span{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:1.8px;font-size:12px}.section-head h2{font-family:"Playfair Display",Georgia,serif;color:var(--navy);font-size:40px;line-height:1.15;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}
+.about{background:var(--light)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-card{background:#fff;padding:34px;border-radius:14px;box-shadow:0 15px 45px rgba(20,32,51,.08);border-top:4px solid var(--gold)}
+.about h3{font-family:"Playfair Display";font-size:32px;color:var(--navy);margin-top:0}.about p{color:var(--muted)}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}.point{font-weight:600;color:var(--navy)}.point:before{content:"✓";color:var(--gold);font-weight:900;margin-right:9px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{padding:29px;border:1px solid #e8ecf2;border-radius:12px;background:#fff;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(9,38,83,.10);border-color:#d7b04a}.icon{font-size:32px}.service h3{color:var(--navy);margin:12px 0 7px;font-size:19px}.service p{color:var(--muted);font-size:14px;margin:0}
+.projects{background:var(--navy);color:#fff}.projects .section-head h2{color:#fff}.projects .section-head p{color:#cbd5e5}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{height:260px;border-radius:12px;overflow:hidden;position:relative;background:linear-gradient(145deg,#1b4c87,#0a2448)}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.75))}.project-content{position:absolute;z-index:2;bottom:20px;left:22px}.project h3{margin:0 0 4px}.project p{margin:0;color:#dbe4f2;font-size:13px}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.why{text-align:center;padding:25px 15px}.why strong{display:block;color:var(--navy);font-size:16px;margin-top:9px}.why p{font-size:13px;color:var(--muted)}
+.cta{background:linear-gradient(110deg,var(--navy),var(--blue));color:#fff}.cta-box{display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{font-family:"Playfair Display";font-size:38px;margin:0 0 8px}.cta p{margin:0;color:#d9e2ef}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}.contact-info h3{font-family:"Playfair Display";font-size:32px;color:var(--navy)}.contact-item{display:flex;gap:15px;margin:22px 0}.contact-item b{display:block;color:var(--navy)}.contact-item span{color:var(--muted);font-size:14px}
+form{background:var(--light);padding:30px;border-radius:14px}label{font-size:13px;font-weight:700;color:var(--navy);display:block;margin:12px 0 6px}input,textarea,select{width:100%;padding:12px 13px;border:1px solid #dbe1e9;border-radius:7px;background:#fff;font:inherit}textarea{min-height:110px;resize:vertical}button.submit{margin-top:17px;border:0;cursor:pointer;background:var(--gold);color:var(--navy);font-weight:800;padding:13px 22px;border-radius:7px}
+footer{background:#061a37;color:#c7d2e2;padding:35px 0 20px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot img{height:48px;background:#fff;padding:4px;border-radius:5px}.copy{text-align:center;border-top:1px solid rgba(255,255,255,.1);margin-top:25px;padding-top:18px;font-size:12px}
+.float{position:fixed;right:20px;bottom:20px;background:#198754;color:#fff;padding:13px 17px;border-radius:50px;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.2);z-index:30}
+@media(max-width:850px){.links{display:none}.menu{display:block}.services-grid,.project-grid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.cta-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.topbar .container{justify-content:center;font-size:11px}.nav{min-height:72px}.logo{height:52px;width:40px}.brand-text strong{font-size:21px}.brand-text b{font-size:9px}.brand-text small{font-size:7px}.hero{min-height:570px}.hero-content{padding:65px 0}section{padding:62px 0}.services-grid,.project-grid{grid-template-columns:1fr}.points{grid-template-columns:1fr}.cta h2{font-size:30px}.foot{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Quality</span><span>|</span><span>Trust</span><span>|</span><span>Commitment</span></div></div>
+<header><div class="container nav">
+<a href="#home" class="brand">
+  <img class="logo" src="assets/company-mark.png" alt="Druthi Constructions logo">
+  <span class="brand-text">
+    <strong>DRUTHI</strong>
+    <b>CONSTRUCTIONS &amp; CONSULTANCY</b>
+    <small>Complete Building Solutions Under One Roof</small>
+  </span>
+</a>
+<div class="header-person">
+  <span>Engineer</span>
+  <strong>Sunil T</strong>
+</div>
+<nav class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#why">Why Us</a><a href="#contact">Contact</a></nav>
+<button class="menu" onclick="document.querySelector('.links').classList.toggle('show')">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+<div class="eyebrow">Complete Building Solutions Under One Roof</div>
+<h1>Building Dreams,<br>Creating Trust.</h1>
+<p>Professional construction and civil engineering consultancy for residential and commercial projects — from planning and design to estimation and construction supervision.</p>
+<div class="btns"><a class="btn primary" href="#contact">Get a Consultation</a><a class="btn secondary" href="tel:+919845480356">Call +91 98454 80356</a></div>
+</div></div></section>
+
+<section class="about" id="about"><div class="container about-grid">
+<div><div class="section-head" style="text-align:left;margin:0"><span>About Us</span><h2>Engineering expertise you can trust.</h2></div>
+<p>Druthi Constructions & Consultancy provides professional civil engineering and construction consultancy services with a focus on quality, safety, practical design, and cost-effective execution.</p>
+<p>We support clients throughout the project journey — helping turn ideas and site requirements into well-planned, technically sound building solutions.</p>
+<div class="points"><div class="point">Quality-focused execution</div><div class="point">Technical guidance</div><div class="point">Cost-conscious solutions</div><div class="point">Client-focused service</div></div></div>
+<div class="about-card"><h3>Our Commitment</h3><p>We believe every building begins with a good plan. Our approach combines engineering knowledge with practical construction understanding to deliver dependable solutions for every project.</p><p><strong>Quality • Trust • Commitment</strong></p></div>
+</div></section>
+
+<section id="services"><div class="container"><div class="section-head"><span>What We Do</span><h2>Our Professional Services</h2><p>Comprehensive consultancy services tailored to your project requirements.</p></div>
+<div class="services-grid">
+<div class="service"><div class="icon">🏠</div><h3>Building Planning & Design</h3><p>Functional and practical plans for residential and commercial buildings.</p></div>
+<div class="service"><div class="icon">📐</div><h3>Structural Consultancy</h3><p>Safe and reliable structural analysis, design, and engineering solutions.</p></div>
+<div class="service"><div class="icon">📊</div><h3>Estimation & Costing</h3><p>Quantity estimation, BOQ preparation, rate analysis, and project cost planning.</p></div>
+<div class="service"><div class="icon">🏗️</div><h3>Construction Supervision</h3><p>Site supervision and technical guidance to support quality execution.</p></div>
+<div class="service"><div class="icon">📋</div><h3>Quantity Surveying</h3><p>Measurement, quantity calculations, billing, and material management support.</p></div>
+<div class="service"><div class="icon">🏢</div><h3>Project Consultancy</h3><p>End-to-end technical consultation for residential and commercial projects.</p></div>
+</div></div></section>
+
+<section class="projects" id="projects"><div class="container"><div class="section-head"><span>Portfolio</span><h2>Our Projects</h2><p>Showcase your completed and ongoing projects here. Replace these cards with your project photographs.</p></div>
+<div class="project-grid">
+<div class="project"><div class="project-content"><h3>Residential Building</h3><p>Planning • Design • Consultancy</p></div></div>
+<div class="project"><div class="project-content"><h3>Commercial Project</h3><p>Estimation • Supervision • Consultancy</p></div></div>
+<div class="project"><div class="project-content"><h3>Independent House</h3><p>Planning • Structural • Costing</p></div></div>
+</div></div></section>
+
+<section id="why"><div class="container"><div class="section-head"><span>Our Advantage</span><h2>Why Choose Us?</h2></div>
+<div class="why-grid">
+<div class="why"><div style="font-size:34px">✓</div><strong>Professional Expertise</strong><p>Engineering-focused solutions for your project.</p></div>
+<div class="why"><div style="font-size:34px">◈</div><strong>Quality Focus</strong><p>Attention to quality, safety, and workmanship.</p></div>
+<div class="why"><div style="font-size:34px">₹</div><strong>Cost Effective</strong><p>Practical solutions that help control project costs.</p></div>
+<div class="why"><div style="font-size:34px">♥</div><strong>Client First</strong><p>Clear communication and solutions around your needs.</p></div>
+</div></div></section>
+
+<section class="cta"><div class="container cta-box"><div><h2>Planning to build?</h2><p>Let's discuss your project requirements.</p></div><a class="btn primary" href="#contact">Start Your Project</a></div></section>
+
+<section id="contact"><div class="container contact-grid">
+<div class="contact-info"><div class="section-head" style="text-align:left;margin:0"><span>Contact Us</span><h2>Let's discuss your project.</h2></div>
+<div class="contact-item"><div>📞</div><div><b>Phone</b><span>+91 98454 80356</span></div></div>
+<div class="contact-item"><div>📍</div><div><b>Office</b><span>Saraswati Nagar, Davanagere – 577004</span></div></div>
+<div class="contact-item"><div>👷</div><div><b>Consultant</b><span>Engineer Sunil T</span></div></div>
+</div>
+<form onsubmit="sendWhatsApp(event)"><h3 style="margin-top:0;color:var(--navy)">Send an Enquiry</h3>
+<label>Name</label><input id="name" required placeholder="Your name">
+<label>Phone Number</label><input id="phone" required placeholder="Your phone number">
+<label>Project Type</label><select id="type"><option>Residential Building</option><option>Commercial Building</option><option>Structural Consultancy</option><option>Estimation & Costing</option><option>Construction Supervision</option><option>Other</option></select>
+<label>Message</label><textarea id="message" placeholder="Tell us briefly about your project"></textarea>
+<button class="submit" type="submit">Send Enquiry on WhatsApp</button></form>
+</div></section>
+</main>
+
+<footer><div class="container foot"><img src="assets/logo.png" alt="Druthi logo"><div>Druthi Constructions & Consultancy<br><small>Complete Building Solutions Under One Roof</small></div></div><div class="container copy">© 2026 Druthi Constructions & Consultancy. All rights reserved.</div></footer>
+<a class="float" href="https://wa.me/919845480356?text=Hello%20Druthi%20Constructions%20%26%20Consultancy,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank">💬 WhatsApp</a>
+<script>
+function sendWhatsApp(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value,p=document.getElementById('phone').value,t=document.getElementById('type').value,m=document.getElementById('message').value;
+ const text=`Hello Druthi Constructions & Consultancy,%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AProject: ${encodeURIComponent(t)}%0AMessage: ${encodeURIComponent(m)}`;
+ window.open(`https://wa.me/919845480356?text=${text}`,'_blank');
+}
+</script>
+</body></html>
